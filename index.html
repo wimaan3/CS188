@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CS-188 Final Project</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f5f5f5; }
+        header { background-color: #333; color: white; padding: 20px; text-align: center; }
+        nav { background-color: #444; overflow: hidden; }
+        nav a { float: left; color: white; text-align: center; padding: 14px 16px; text-decoration: none; }
+        nav a:hover { background-color: #ddd; color: black; }
+        .container { padding: 20px; max-width: 1000px; margin: auto; background-color: white; }
+        h2 { border-bottom: 2px solid #ddd; padding-bottom: 10px; }
+        .section { margin-bottom: 40px; }
+        .gallery img { max-width: 200px; margin: 10px; border: 1px solid #ccc; }
+        footer { background-color: #333; color: white; text-align: center; padding: 10px; position: fixed; width: 100%; bottom: 0; }
+        .contact-list { list-style: none; padding: 0; }
+        .contact-list li { margin: 5px 0; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>CS188 Robot Navigation Project</h1>
+        <p>Autonomous Navigation Using SLAM and RRT</p>
+    </header>
+
+    <nav>
+        <a href="#overview">Overview</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#repository">Repository</a>
+        <a href="#team">Team & Contact</a>
+        <a href="#demo">Demo Video</a>
+        <a href="#report">Project Report</a>
+    </nav>
+
+    <div class="container">
+        <section id="overview" class="section">
+            <h2>Project Overview</h2>
+            <p>
+                <strong>Goal:</strong> Build a robot car capable of autonomously navigating to a target location, using visual SLAM (ORB-SLAM3) for mapping and RRT for collision-free path planning. Upon arrival, the robot verifies its position via camera-based AprilTag detection.  A fallback simulation mode replicates the same pipeline in software if hardware is unavailable.
+            </p>
+            <p>
+                <strong>Approach:</strong>
+                <ul>
+
+                    <li>Camera based ORB-SLAM to generate a 2D occupancy grid.</li>
+                    <li>Sampling-based RRT planner to compute a path from start to goal.</li>
+                </ul>
+            </p>
+            <p>
+                <strong>Success Criteria:</strong> The robot (physical or simulated) successfully reaches the specified goal and confirms via camera detection of a fiducial. 90%+ success rate across multiple trials.
+            </p>
+        </section>
+
+        <section id="gallery" class="section">
+            <h2>Gallery</h2>
+            <div class="gallery">
+                <!-- Place your project images in an "images" folder -->
+                <img src="images/robot_front.jpg" alt="Robot Front View">
+                <img src="images/slam_map.png" alt="SLAM Occupancy Grid">
+                <img src="images/rrt_tree.png" alt="RRT Expansion Screenshot">
+            </div>
+            <p>Place additional images (e.g., robot hardware, projected SLAM map, RRT planning visualization) in the <code>images/</code> directory.  Rename accordingly.</p>
+        </section>
+
+        <section id="repository" class="section">
+            <h2>Source Code & Repository</h2>
+            <p>All project code, build scripts, and documentation are available on GitHub:</p>
+            <p><a href="https://github.com/wimaan3/CS188" target="_blank">https://github.com/wimaan3/CS188</a></p>
+        </section>
+
+        <section id="team" class="section">
+            <h2>Team & Contact</h2>
+            <ul class="contact-list">
+                <li><strong>Imaan Soltanalpour:</strong>  &lt;<a href="imaansoltan@gmail.com">imaansoltan@gmail.com</a>&gt;</li>
+                <li><strong>Jeffery Vole:</strong>  &lt;<a href="
+jeffreyvole@g.ucla.edu">
+jeffreyvole@g.ucla.edu</a>&gt;</li>
+            </ul>
+            <p>For questions about SLAM integration, planning, or hardware setup, feel free to reach out via email.</p>
+        </section>
+
+        <section id="demo" class="section">
+    <h2>Demo Video</h2>
+    <p>
+        Watch our demo here:
+        <a href="https://drive.google.com/file/d/1p5nFzjdRstI21PMx2TxH2g0ZZIsVaT1S/view?usp=sharing"
+           target="_blank"
+           rel="noopener">
+            Demo on Google Drive
+        </a>
+    </p>
+</section>
+
+
+        <section id="report" class="section">
+            <h2>Project Report</h2>
+            <p>The final project report (detailed system design, evaluation, discussion) will be placed here as <code>project_report.pdf</code>.  For now, this is a placeholder.</p>
+            <p><a href="project_report.pdf" target="_blank">Download Project Report (Placeholder)</a></p>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; CS188 Final Project | 2025</p>
+    </footer>
+</body>
+</html>

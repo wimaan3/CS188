@@ -1,0 +1,7 @@
+
+image: pgm/map.pgm
+resolution: 0.05   # meters/pixel — adjust to your SLAM scale
+origin: [0.0, 0.0, 0.0]   # [x, y, yaw] of pixel (0,0) in meter frame
+negate: 0
+occupied_thresh: 0.65
+free_thresh: 0.196
