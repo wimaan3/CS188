@@ -83,7 +83,7 @@ Parameter files in **`yaml/`** define map metadata and planner settings. Edit th
 
 ## Videos
 
-Check these videos for instructions:
+Check these videos for instructions and demos:
 https://www.icloud.com/photos/#/icloudlinks/0dfTQ50FrlYUPwPG9NzAPZ-Vw
 
 https://www.icloud.com/photos/#/icloudlinks/0abfEnWkPKtfCW9sU73CIzwxQ
