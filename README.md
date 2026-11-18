@@ -19,7 +19,6 @@ This repository contains our final project for CS188, showcasing an autonomous n
 ├── npy/                 # Saved numpy arrays (maps, trajectories)
 ├── pgm/                 # PGM map files for planners
 ├── yaml/                # Map metadata in YAML format
-├── project_report.pdf   # Final project report
 ├── index.html           # Project website
 ├── requirements.txt     # Python dependencies
 └── README.md            # This document
